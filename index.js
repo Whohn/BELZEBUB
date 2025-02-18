@@ -25,7 +25,7 @@ const readline = require('readline');
 const { stdin: input, stdout: output } = require('process');
 
 async function fetchUsers() {
-    const url = 'https://github.com/latesturl/dbRaolProjects/raw/refs/heads/main/dbconfig.json'; // Ganti dengan URL GitHub Raw Anda
+    const url = 'https://raw.githubusercontent.com/Whohn/DBELZ/refs/heads/main/dbconfig.json'; // Ganti dengan URL GitHub Raw Anda
     try {
         const response = await axios.get(url);
         return response.data;
